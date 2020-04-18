@@ -1,26 +1,6 @@
-'''
-Function:
-	视频下载器v2.0.1-cmd版, 目前支持的平台:
-		--tecent: 腾讯视频
-		--yinyuetai: 音悦台MV
-		--cntv: 中国网络电视台
-		--ted: TED演讲
-		--douyu: 斗鱼TV
-		--zhanqi: 战旗TV
-		--bilibili: B站视频
-		--zhihu: 知乎视频
-Author:
-	Charles
-微信公众号:
-	Charles的皮卡丘
-声明:
-	代码仅供学习交流，不得用于商业/非法使用
-'''
 import sys
 from platforms import *
 sys.path.append('ffmpeg')
-
-
 '''视频下载器'''
 class VideoDownloader():
 	def __init__(self, **kwargs):
@@ -102,8 +82,6 @@ Function: 视频下载器 V2.0.1
 		else:
 			return user_input
 
-
-'''run'''
 if __name__ == '__main__':
 	try:
 		VideoDownloader().run()
